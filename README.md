@@ -16,3 +16,4 @@
 | 343 | [整数拆分](https://leetcode-cn.com/problems/integer-break/) | [Golang](./algorithms/golang/343/integerBreak.go) |
 | 279 | [完全平方数](https://leetcode-cn.com/problems/perfect-squares/) | [Golang](./algorithms/golang/279/numSquares.go) |
 | 785 | [判断二分图](https://leetcode-cn.com/problems/is-graph-bipartite/) | [Java](./algorithms/java/785/Solution.java) |
+| 695 | [岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/) | [Java](./algorithms/java/695/Solution.java) |
