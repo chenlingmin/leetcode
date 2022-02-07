@@ -2,6 +2,16 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 class Solution {
+    private int[][] dirs = {
+            {0, -1},  // 左
+            {0, 1},   // 右
+            {-1, 0},  // 上
+            {1, 0},   // 下
+            {-1, -1}, // 左上
+            {-1, 1},  // 右上
+            {1, -1},  // 左下
+            {1, 1},   // 右下
+    };
     private int R, C;
 
     public int shortestPathBinaryMatrix(int[][] grid) {
@@ -9,16 +19,6 @@ class Solution {
         C = grid[0].length;
         boolean[][] visited = new boolean[R][C];
 
-        int[][] dirs = {
-                {0, -1},  // 左
-                {0, 1},   // 右
-                {-1, 0},  // 上
-                {1, 0},   // 下
-                {-1, -1}, // 左上
-                {-1, 1},  // 右上
-                {1, -1},  // 左下
-                {1, 1},   // 右下
-        };
 
         int[][] dis = new int[R][C];
 
@@ -37,21 +37,17 @@ class Solution {
             for (int d = 0; d < 8; d++) {
                 int nextx = curx + dirs[d][0];
                 int nexty = cury + dirs[d][1];
-                if (nextx + 1 == R  && nexty + 1 == C && grid[nextx][nexty] == 0) {
-                    return dis[curx][cury] + 1;
-                }
                 if (inArea(nextx, nexty) && !visited[nextx][nexty] && grid[nextx][nexty] == 0) {
                     queue.add(nextx * R + nexty);
                     visited[nextx][nexty] = true;
-                    if (dis[nextx][nexty] == 0)
-                        dis[nextx][nexty] = dis[curx][cury] + 1;
-                    else if (dis[nextx][nexty] > 0)
-                        dis[nextx][nexty] = Math.min(dis[curx][cury] + 1, dis[nextx][nexty]);
+                    dis[nextx][nexty] = dis[curx][cury] + 1;
+                    if (nextx + 1 == R  && nexty + 1 == C ) {
+                        return dis[nextx][nexty];
+                    }
                 }
             }
         }
         return -1;
-
     }
 
     private boolean inArea(int x, int y) {
