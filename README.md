@@ -18,3 +18,4 @@
 | 785 | [判断二分图](https://leetcode-cn.com/problems/is-graph-bipartite/) | [Java](./algorithms/java/785/Solution.java) |
 | 695 | [岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/) | [Java](./algorithms/java/695/Solution.java) |
 | 1091 | [二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) | [Java](./algorithms/java/1091/Solution.java) |
+| 752 | [打开转盘锁](https://leetcode-cn.com/problems/open-the-lock/) | [Java](./algorithms/java/752/Solution.java) |
