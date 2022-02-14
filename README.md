@@ -20,3 +20,4 @@
 | 1091 | [二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) | [Java](./algorithms/java/1091/Solution.java) |
 | 752 | [打开转盘锁](https://leetcode-cn.com/problems/open-the-lock/) | [Java](./algorithms/java/752/Solution.java) |
 | 773 | [滑动谜题](https://leetcode-cn.com/problems/sliding-puzzle/) | [Java](./algorithms/java/773/Solution.java) |
+| 980 | [不同路径 III](https://leetcode-cn.com/problems/unique-paths-iii/) | [Java](./algorithms/java/980/Solution.java) |
